@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confiz — Site web de gestion d'une confiserie · AGL</title>
+    <meta name="description" content="Confiz : site de gestion d'un réseau de confiseries, de l'identité aux maquettes, jusqu'au prototype PHP à trois profils.">
+    <meta name="author" content="Antonin Guillotot-Lechien">
+    <!-- Aperçu lors d'un partage (LinkedIn, Messenger, mail...) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Antonin Guillotot-Lechien · Portfolio">
+    <meta property="og:title" content="Confiz — Site web de gestion d'une confiserie · AGL">
+    <meta property="og:description" content="Confiz : site de gestion d'un réseau de confiseries, de l'identité aux maquettes, jusqu'au prototype PHP à trois profils.">
+    <meta property="og:image" content="img/projets/confiz/img1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/meta/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/meta/favicon-512.png">
+    <link rel="apple-touch-icon" href="img/meta/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projets.css">
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/vtf-gulax" rel="stylesheet">
+    <!-- Polices du site Confiz, pour les montrer dans la section identité -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bagel+Fat+One&family=Boogaloo&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="reading-progress-bar"></div>
+    <div class="bg-container"></div>
+
+    <!-- ENTRANCE LOADER -->
+    <div id="loader">
+        <div class="loader-logo-container">
+            <img src="img/letter_logo_blanc.png" alt="Logo AGL" class="loader-logo">
+            <div class="loader-glow"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-tag">Voir</div>
+    </div>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="header">
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <img src="img/letter_logo_blanc.png" alt="Logo Antonin Guillotot-Lechien">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="index.html#expertise">À propos</a></li>
+                <li><a href="index.html#contact" class="btn-primary">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html#propos">À propos</a></li>
+                <li><a href="index.html#expertise">Expertise</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pd-container pd-minimal-layout">
+
+        <!-- HERO -->
+        <div class="pd-minimal-hero reveal">
+            <div class="pd-hero-top-bar">
+                <a href="projets.html" class="pd-back-link">← Tous les projets</a>
+                <div class="pd-hero-badges">
+                    <span class="pd-badge">UX/UI · Développement Web</span>
+                    <span class="pd-badge accent">SAE 2.03 · Binôme</span>
+                </div>
+            </div>
+
+            <h1 class="pd-hero-title">
+                Confiz
+                <span>Gestion d'une confiserie</span>
+            </h1>
+
+            <p class="pd-hero-lead">
+                Un site pour un réseau de confiseries : le public consulte les boutiques et leurs stocks, les
+                gérants les administrent.
+            </p>
+
+            <div class="pd-minimal-specs-strip">
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Rôle</span>
+                    <span class="pd-strip-val">Design UX/UI & Dév Web</span>
+                </div>
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Contexte</span>
+                    <span class="pd-strip-val">SAE 2.03 · BUT MMI 1</span>
+                </div>
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Stack</span>
+                    <span class="pd-strip-val">PHP · SQL · HTML/CSS · JS</span>
+                </div>
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Équipe</span>
+                    <span class="pd-strip-val">Binôme</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- APERÇU -->
+        <section id="apercu" class="pd-section reveal">
+            <div class="pd-media-showcase">
+                <div class="browser-header">
+                    <div class="browser-dots">
+                        <span class="browser-dot red"></span>
+                        <span class="browser-dot yellow"></span>
+                        <span class="browser-dot green"></span>
+                    </div>
+                    <div class="browser-address-bar">Prototype · Confiz</div>
+                </div>
+                <div class="pd-media-content">
+                    <img src="img/projets/confiz/img1.png" alt="Page d'accueil du site Confiz">
+                </div>
+            </div>
+        </section>
+
+        <!-- CHIFFRES CLÉS -->
+        <section class="pd-section reveal">
+            <div class="cz-figures">
+                <div class="cz-figure">
+                    <span class="cz-figure-num">3</span>
+                    <span class="cz-figure-label cz-mono">Profils utilisateurs</span>
+                </div>
+                <div class="cz-figure">
+                    <span class="cz-figure-num">4</span>
+                    <span class="cz-figure-label cz-mono">Tables SQL</span>
+                </div>
+                <div class="cz-figure">
+                    <span class="cz-figure-num">11</span>
+                    <span class="cz-figure-label cz-mono">Pages publiques & admin</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEXTE -->
+        <section id="contexte" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">01 / LE BRIEF</span>
+            </div>
+            <div class="cz-context">
+                <h2 class="pd-section-title">Moderniser un réseau de boutiques.</h2>
+                <p>
+                    Une vitrine pour les familles, et un back-office où chaque gérant suit ses stocks.
+                    Un <strong>super-gérant</strong> pilote tout le réseau et peut ouvrir ou fermer des boutiques.
+                </p>
+            </div>
+        </section>
+
+        <!-- IDENTITÉ VISUELLE -->
+        <section id="identite" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">02 / IDENTITÉ VISUELLE</span>
+                <h2 class="pd-section-title">Sucré, rond, assumé</h2>
+            </div>
+            <div class="cz-identity">
+                <div class="cz-logo-card">
+                    <img src="img/projets/confiz/logo-confiz.png" alt="Logo Confiz">
+                </div>
+                <div class="cz-identity-right">
+                    <div class="cz-palette">
+                        <div class="cz-swatch dark" style="background:#4b092c"><span>#4B092C</span></div>
+                        <div class="cz-swatch dark" style="background:#dc3163"><span>#DC3163</span></div>
+                        <div class="cz-swatch dark" style="background:#f36da8"><span>#F36DA8</span></div>
+                        <div class="cz-swatch light" style="background:#ffebee"><span>#FFEBEE</span></div>
+                        <div class="cz-swatch light" style="background:#f8f9fa"><span>#F8F9FA</span></div>
+                    </div>
+                    <div class="cz-type">
+                        <div>
+                            <span class="cz-type-sample bagel">Confiz</span>
+                            <span class="cz-type-name">Bagel Fat One · Titres</span>
+                        </div>
+                        <div>
+                            <span class="cz-type-sample boogaloo">Bonbons</span>
+                            <span class="cz-type-name">Boogaloo · Texte</span>
+                        </div>
+                        <div>
+                            <span class="cz-type-sample anton">Menu</span>
+                            <span class="cz-type-name">Anton · Navigation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONCEPTION -->
+        <section id="conception" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">03 / CONCEPTION</span>
+                <h2 class="pd-section-title">Du gris au rose</h2>
+            </div>
+            <div class="cz-design">
+                <figure class="cz-screen">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/confiz/wireframes.png"
+                            alt="Wireframes Figma des pages Produit, Catalogue et Accueil">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Wireframes</span>Structure des pages, sans le style.
+                    </figcaption>
+                </figure>
+                <span class="cz-design-arrow" aria-hidden="true">→</span>
+                <figure class="cz-screen">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/confiz/mockups.png"
+                            alt="Mockups Figma des pages Catalogue et Accueil aux couleurs de Confiz">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Mockups</span>L'identité appliquée.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ÉCRANS -->
+        <section id="ecrans" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">04 / INTERFACES</span>
+                <h2 class="pd-section-title">Du visiteur au super-gérant</h2>
+            </div>
+            <div class="cz-screens">
+                <figure class="cz-screen wide">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/confiz/img2.png"
+                            alt="Page Boutiques : carte interactive des boutiques Confiz et recherche par adresse">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Visiteur</span>Carte des boutiques et recherche par
+                        adresse.</figcaption>
+                </figure>
+                <figure class="cz-screen">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/confiz/img3.png"
+                            alt="Fiche de la boutique Confiz Rennes : adresse, gérant et horaires d'ouverture">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Visiteur</span>Fiche boutique et horaires.</figcaption>
+                </figure>
+                <figure class="cz-screen">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/confiz/img4.png"
+                            alt="Espace gérant : gestion des stocks de Confiz Lannion, avec un produit en rupture signalé">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Gérant</span>Stocks modifiables, ruptures signalées.
+                    </figcaption>
+                </figure>
+                <figure class="cz-screen wide">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/confiz/img5.png"
+                            alt="Espace super-gérant : liste de toutes les boutiques avec leurs gérants, stocks et actions">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Super-gérant</span>Toutes les boutiques, leurs gérants et
+                        leurs stocks.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- DÉMARCHE -->
+        <section id="demarche" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">05 / DÉMARCHE</span>
+                <h2 class="pd-section-title">De la base au code</h2>
+            </div>
+            <div class="cz-steps">
+                <div class="cz-step">
+                    <span class="cz-step-num">01</span>
+                    <h4>Modéliser</h4>
+                    <p>Diagramme de la base de données relationnelle.</p>
+                </div>
+                <div class="cz-step">
+                    <span class="cz-step-num">02</span>
+                    <h4>Concevoir</h4>
+                    <p>Planches, wireframes et mockups.</p>
+                </div>
+                <div class="cz-step">
+                    <span class="cz-step-num">03</span>
+                    <h4>Développer</h4>
+                    <p>PHP, SQL et rôles avec droits différents.</p>
+                </div>
+                <div class="cz-step">
+                    <span class="cz-step-num">04</span>
+                    <h4>Collaborer</h4>
+                    <p>Travail à deux, versionné sur GitHub.</p>
+                </div>
+            </div>
+            <div class="cz-stack">
+                <span class="pd-skill-tag">PHP</span>
+                <span class="pd-skill-tag">SQL</span>
+                <span class="pd-skill-tag">HTML / CSS</span>
+                <span class="pd-skill-tag">JavaScript</span>
+                <span class="pd-skill-tag">Leaflet</span>
+                <span class="pd-skill-tag">Wireframes</span>
+                <span class="pd-skill-tag">Mockups</span>
+                <span class="pd-skill-tag">GitHub</span>
+            </div>
+        </section>
+
+        <!-- ENSEIGNEMENTS -->
+        <section id="bilan" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">06 / CE QUE J'EN RETIENS</span>
+            </div>
+            <div class="cz-takeaways">
+                <div class="cz-takeaway">
+                    <strong>L'UX guide le code</strong>
+                    <p>Les maquettes ont rendu le développement plus simple et plus rapide.</p>
+                </div>
+                <div class="cz-takeaway">
+                    <strong>La logique métier, c'est dur</strong>
+                    <p>Coder les droits du super-gérant demande beaucoup de rigueur.</p>
+                </div>
+                <div class="cz-takeaway">
+                    <strong>À deux, on communique</strong>
+                    <p>Se partager le travail et corriger les bugs ensemble, via GitHub.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NAVIGATION -->
+        <div class="pd-next-prev-grid reveal">
+            <a href="projet-3d-diorama.html" class="pd-nav-card prev">
+                <span class="pd-nav-card-sub">← Projet précédent</span>
+                <h3 class="pd-nav-card-title">Diorama 3D</h3>
+                <span class="pd-nav-card-arrow">←</span>
+            </a>
+            <a href="projet-guinguette.html" class="pd-nav-card next">
+                <span class="pd-nav-card-sub">Projet suivant →</span>
+                <h3 class="pd-nav-card-title">La Guinguette de Léon</h3>
+                <span class="pd-nav-card-arrow">→</span>
+            </a>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

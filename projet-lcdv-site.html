@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lannion Cœur de Ville — Site web · AGL</title>
+    <meta name="description" content="Wireframes, mockups et prototype codé du nouveau site de Lannion Cœur de Ville, avec espaces commerçant et administrateur.">
+    <meta name="author" content="Antonin Guillotot-Lechien">
+    <!-- Aperçu lors d'un partage (LinkedIn, Messenger, mail...) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Antonin Guillotot-Lechien · Portfolio">
+    <meta property="og:title" content="Lannion Cœur de Ville — Site web · AGL">
+    <meta property="og:description" content="Wireframes, mockups et prototype codé du nouveau site de Lannion Cœur de Ville, avec espaces commerçant et administrateur.">
+    <meta property="og:image" content="img/projets/lcdv/web-site-accueil.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/meta/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/meta/favicon-512.png">
+    <link rel="apple-touch-icon" href="img/meta/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projets.css">
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/vtf-gulax" rel="stylesheet">
+</head>
+
+<body>
+    <div class="reading-progress-bar"></div>
+    <div class="bg-container"></div>
+
+    <!-- ENTRANCE LOADER -->
+    <div id="loader">
+        <div class="loader-logo-container">
+            <img src="img/letter_logo_blanc.png" alt="Logo AGL" class="loader-logo">
+            <div class="loader-glow"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-tag">Voir</div>
+    </div>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="header">
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <img src="img/letter_logo_blanc.png" alt="Logo Antonin Guillotot-Lechien">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="index.html#expertise">À propos</a></li>
+                <li><a href="index.html#contact" class="btn-primary">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html#propos">À propos</a></li>
+                <li><a href="index.html#expertise">Expertise</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pd-container pd-minimal-layout">
+
+        <!-- HERO -->
+        <div class="pd-minimal-hero reveal">
+            <div class="pd-hero-top-bar">
+                <a href="projets.html" class="pd-back-link">← Tous les projets</a>
+                <div class="pd-hero-badges">
+                    <span class="pd-badge">UX/UI · Développement Web</span>
+                    <span class="pd-badge accent">Prototype non mis en ligne</span>
+                </div>
+            </div>
+
+            <h1 class="pd-hero-title">
+                Lannion Cœur de Ville
+                <span>Site web</span>
+            </h1>
+
+            <p class="pd-hero-lead">
+                L'audit avait montré un site informatif mais peu pensé pour ses visiteurs. On l'a repensé de zéro :
+                pour les habitants, pour les commerçants, et pour l'association qui le gère.
+            </p>
+
+            <div class="pd-minimal-specs-strip">
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Client</span>
+                    <span class="pd-strip-val">Association Lannion Cœur de Ville</span>
+                </div>
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Livrables</span>
+                    <span class="pd-strip-val">Wireframes, mockups, site codé</span>
+                </div>
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Équipe</span>
+                    <span class="pd-strip-val">Heol Studio · 4 étudiants</span>
+                </div>
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Stack</span>
+                    <span class="pd-strip-val">Node.js · Express · EJS · MySQL</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SÉRIE -->
+        <section class="pd-section reveal">
+            <nav class="series-nav" aria-label="Projets de l'accompagnement Lannion Cœur de Ville">
+                <span class="series-nav-label">Accompagnement <strong>Lannion Cœur de Ville</strong></span>
+                <div class="series-nav-links">
+                    <a href="projet-lcdv-strategie.html"><em>01</em> Stratégie</a>
+                    <a href="projet-lcdv-identite.html"><em>02</em> Identité visuelle</a>
+                    <a href="projet-lcdv-site.html" class="is-current" aria-current="page"><em>03</em> Site web</a>
+                </div>
+            </nav>
+        </section>
+
+        <!-- APERÇU -->
+        <section id="apercu" class="pd-section reveal">
+            <div class="pd-media-showcase">
+                <div class="browser-header">
+                    <div class="browser-dots">
+                        <span class="browser-dot red"></span>
+                        <span class="browser-dot yellow"></span>
+                        <span class="browser-dot green"></span>
+                    </div>
+                    <div class="browser-address-bar">Prototype · Lannion Cœur de Ville</div>
+                </div>
+                <div class="pd-media-content">
+                    <img src="img/projets/lcdv/web-site-accueil.jpg"
+                        alt="Page d'accueil du nouveau site Lannion Cœur de Ville, avec barre de recherche des commerces">
+                </div>
+            </div>
+        </section>
+
+        <!-- CHIFFRES CLÉS -->
+        <section class="pd-section reveal">
+            <div class="cz-figures">
+                <div class="cz-figure">
+                    <span class="cz-figure-num">3</span>
+                    <span class="cz-figure-label cz-mono">Profils : visiteur, commerçant, admin</span>
+                </div>
+                <div class="cz-figure">
+                    <span class="cz-figure-num">11</span>
+                    <span class="cz-figure-label cz-mono">Pages maquettées</span>
+                </div>
+                <div class="cz-figure">
+                    <span class="cz-figure-num">1</span>
+                    <span class="cz-figure-label cz-mono">Back-office complet</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- BRIEF -->
+        <section id="contexte" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">01 / LE BRIEF</span>
+            </div>
+            <div class="cz-context">
+                <h2 class="pd-section-title">Trouver un commerce en deux clics.</h2>
+                <p>
+                    Une liste de commerçants difficile à parcourir, pas d'agenda clair : l'ancien site informait sans
+                    guider. Le nouveau devait servir les visiteurs, mais aussi laisser chaque commerçant gérer sa
+                    propre fiche.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONCEPTION -->
+        <section id="conception" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">02 / CONCEPTION</span>
+                <h2 class="pd-section-title">Du gris au rouge</h2>
+            </div>
+            <div class="cz-screens">
+                <figure class="cz-screen">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/lcdv/web-wf-accueil.jpg"
+                            alt="Wireframe Figma de la page d'accueil : en-tête, recherche, présentation, mosaïque de catégories">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Wireframe</span>Accueil : la structure d'abord.
+                    </figcaption>
+                </figure>
+                <figure class="cz-screen">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/lcdv/web-mk-accueil.jpg"
+                            alt="Mockup Figma de la page d'accueil aux couleurs de la nouvelle identité">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Mockup</span>Puis la nouvelle identité.</figcaption>
+                </figure>
+                <figure class="cz-screen">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/lcdv/web-wf-commercants.jpg"
+                            alt="Wireframe Figma de l'annuaire des commerçants avec filtres et grille de cartes">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Wireframe</span>Annuaire : filtres et cartes.
+                    </figcaption>
+                </figure>
+                <figure class="cz-screen">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/lcdv/web-mk-commercants.jpg"
+                            alt="Mockup Figma de l'annuaire des commerçants, avec photos et statut ouvert ou fermé">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Mockup</span>Chaque carte dit si le commerce est ouvert.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- LE SITE -->
+        <section id="site" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">03 / LE SITE</span>
+                <h2 class="pd-section-title">Côté visiteur</h2>
+            </div>
+            <div class="cz-screens">
+                <figure class="cz-screen wide">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/lcdv/web-site-fiche.jpg"
+                            alt="Fiche d'un commerçant : photo, statut ouvert actuellement, horaires de la semaine et contacts">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Fiche commerce</span>Statut « ouvert / fermé » calculé en
+                        temps réel à partir des horaires.</figcaption>
+                </figure>
+                <figure class="cz-screen wide">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/lcdv/web-site-evenements.jpg"
+                            alt="Page des événements organisés par l'association dans le centre-ville">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Événements</span>L'agenda qui manquait à l'ancien site.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ESPACES CONNECTÉS -->
+        <section id="espaces" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">04 / ESPACES CONNECTÉS</span>
+                <h2 class="pd-section-title">Chacun gère sa part</h2>
+            </div>
+            <div class="cz-screens">
+                <figure class="cz-screen">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/lcdv/web-espace-commercant.jpg"
+                            alt="Espace compte d'un commerçant : modification de la photo et des informations de son commerce">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Commerçant</span>Photo, horaires, description : en
+                        autonomie.</figcaption>
+                </figure>
+                <figure class="cz-screen">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/lcdv/web-admin-evenements.jpg"
+                            alt="Back-office administrateur : gestion des événements, avec menu des demandes, commerçants et utilisateurs">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Admin</span>Valider les adhésions, gérer commerces et
+                        événements.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- GUIDES -->
+        <section id="guides" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">05 / TRANSMETTRE</span>
+                <h2 class="pd-section-title">Un guide pour chaque profil</h2>
+            </div>
+            <div class="cz-screens">
+                <figure class="cz-screen">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/lcdv/web-guide-commercant.jpg"
+                            alt="Guide d'utilisation du site pour les commerçants : créer son compte, modifier ses informations">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Commerçant</span>Créer son compte, modifier sa fiche.
+                    </figcaption>
+                </figure>
+                <figure class="cz-screen">
+                    <div class="cz-screen-img">
+                        <img src="img/projets/lcdv/web-guide-admin.jpg"
+                            alt="Guide d'utilisation du back-office pour les administrateurs de l'association">
+                    </div>
+                    <figcaption><span class="cz-role-tag">Admin</span>Prendre en main le back-office.</figcaption>
+                </figure>
+            </div>
+            <div class="cz-stack">
+                <span class="pd-skill-tag">Figma</span>
+                <span class="pd-skill-tag">Wireframes</span>
+                <span class="pd-skill-tag">Mockups</span>
+                <span class="pd-skill-tag">Node.js</span>
+                <span class="pd-skill-tag">Express</span>
+                <span class="pd-skill-tag">EJS</span>
+                <span class="pd-skill-tag">MySQL</span>
+                <span class="pd-skill-tag">Sessions & rôles</span>
+                <span class="pd-skill-tag">Upload d'images</span>
+                <span class="pd-skill-tag">GitHub</span>
+            </div>
+        </section>
+
+        <!-- ENSEIGNEMENTS -->
+        <section id="bilan" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">06 / CE QUE J'EN RETIENS</span>
+            </div>
+            <div class="cz-takeaways">
+                <div class="cz-takeaway">
+                    <strong>Partir de l'audit</strong>
+                    <p>Chaque page répond à un problème relevé sur l'ancien site.</p>
+                </div>
+                <div class="cz-takeaway">
+                    <strong>Penser à ceux qui gèrent</strong>
+                    <p>Un site d'association vit grâce à son back-office, pas seulement à sa vitrine.</p>
+                </div>
+                <div class="cz-takeaway">
+                    <strong>Du design au code</strong>
+                    <p>Maquetter puis développer soi-même, sans perte d'intention entre les deux.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NAVIGATION -->
+        <div class="pd-next-prev-grid reveal">
+            <a href="projet-lcdv-identite.html" class="pd-nav-card prev">
+                <span class="pd-nav-card-sub">← Projet précédent</span>
+                <h3 class="pd-nav-card-title">LCDV · Identité</h3>
+                <span class="pd-nav-card-arrow">←</span>
+            </a>
+            <a href="projet-demain.html" class="pd-nav-card next">
+                <span class="pd-nav-card-sub">Projet suivant →</span>
+                <h3 class="pd-nav-card-title">deMMain</h3>
+                <span class="pd-nav-card-arrow">→</span>
+            </a>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

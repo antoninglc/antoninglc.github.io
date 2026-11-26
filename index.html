@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/vtf-gulax" rel="stylesheet">
+
+    <title>Antonin Guillotot-Lechien | Portfolio</title>
+    <meta name="description" content="Antonin Guillotot-Lechien, étudiant en BUT MMI à Lannion. Portfolio en communication, design et web. Stage du 8 mars au 18 juin 2027.">
+    <meta name="author" content="Antonin Guillotot-Lechien">
+    <!-- Aperçu lors d'un partage (LinkedIn, Messenger, mail...) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Antonin Guillotot-Lechien · Portfolio">
+    <meta property="og:title" content="Antonin Guillotot-Lechien | Portfolio">
+    <meta property="og:description" content="Antonin Guillotot-Lechien, étudiant en BUT MMI à Lannion. Portfolio en communication, design et web. Stage du 8 mars au 18 juin 2027.">
+    <meta property="og:image" content="img/meta/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/meta/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/meta/favicon-512.png">
+    <link rel="apple-touch-icon" href="img/meta/apple-touch-icon.png">
+</head>
+
+<body>
+    <div class="bg-container">
+    </div>
+    <!-- ENTRANCE LOADER -->
+    <div id="loader">
+        <div class="loader-logo-container">
+            <img src="img/letter_logo_blanc.png" alt="Logo AGL" class="loader-logo">
+            <div class="loader-glow"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-tag">Voir</div>
+    </div>
+
+    <!-- Glow effect following mouse -->
+    <div id="glow"></div>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="header">
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <a href="#" class="logo-text">
+                    <img src="img/letter_logo_blanc.png" alt="Logo Antonin Guillotot-Lechien">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="#expertise">À propos</a></li>
+                <li><a href="#contact" class="btn-primary">Contact</a></li>
+            </ul>
+
+            <!-- HAMBURGER BUTTON -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- MOBILE MENU OVERLAY -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="#propos">À propos</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-footer">
+                <p>Antonin Guillotot-Lechien</p>
+                <div class="social-mini">
+                    <a href="#">LN</a>
+                    <a href="#">GH</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero">
+            <video id="hero-video" loop muted playsinline class="hero-video">
+                <source src="video/hero-web.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+
+            <!-- META BAR -->
+            <div class="hero-meta">
+                <div class="hero-clock">
+                    <span class="hero-clock-time" id="hero-clock">00:00</span>
+                    <span class="hero-clock-location">- Lannion, FR</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- A PROPOS -->
+        <section id="propos" class="section">
+            <div class="propos-grid">
+                <div class="propos-left reveal">
+                    <h2 class="section-title">Créer, c'est penser<br><span>plus fortement.</span></h2>
+                    <div class="propos-photo-container">
+                        <div class="propos-photo">
+                            <img src="img/PhotoCV_AntoninGuillototLechien.jpg" alt="Antonin Portrait">
+                        </div>
+                    </div>
+                </div>
+                <div class="propos-right reveal">
+                    <!-- Mention de stage : pastille discrète -->
+                    <div class="stage-pill">
+                        <span class="stage-dot" aria-hidden="true"></span>
+                        <span class="stage-pill-label">Je recherche un stage en communication</span>
+                        <span class="stage-pill-dates">8 mars → 18 juin 2027</span>
+                        <span class="stage-pill-meta">15 sem.</span>
+                    </div>
+                    <p class="text-lead">
+                        Enchanté, moi c’est Antonin. Étudiant en troisième année de BUT MMI à l’IUT de Lannion, je me
+                        tourne vers la communication, sans perdre le goût du design et du web.
+                    </p>
+                    <p>
+                        Stratégie, contenus, identité visuelle, interfaces : j'aime penser un message et savoir le mettre
+                        en forme moi-même. Je mets un point d'honneur à soigner chaque détail.
+                    </p>
+                    <div class="propos-socials">
+                        <a href="https://www.linkedin.com/in/antonin-guillotot-lechien-6b104733b/"
+                            target="_blank">LinkedIn ↗</a>
+                        <a href="https://github.com/antoninglc" target="_blank">GitHub ↗</a>
+                        <a href="mailto:antonin.guillototlechien@gmail.com">Email ↗</a>
+                        <a href="doc/CV-Antonin-Guillotot-Lechien.pdf" download="CV_Antonin-Guillotot-Lechien.pdf"
+                            class="propos-cv">Mon CV ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="expertise" class="section">
+            <div class="reveal" style="margin-bottom: var(--spacing-lg);">
+                <h2 class="section2-title">Domaines & Compétences</h2>
+            </div>
+
+            <div class="expertise-layout reveal">
+
+                <!-- PANNEAU GAUCHE : description -->
+                <div class="expertise-panel">
+                    <div class="panel-content active" id="p1">
+                        <div class="panel-num">01</div>
+                        <div class="panel-title">Communication & Webmarketing</div>
+                        <div class="panel-desc">Ce que j'aime, c'est partir d'une question simple : qu'est-ce qu'on veut dire, et à qui ? Je prends le temps de comprendre le contexte avant de proposer quoi que ce soit, parce qu'un message qui tombe à côté ne sert à rien, même s'il est joli.</div>
+                        <div class="panel-tools">
+                            <span class="panel-tool">Audit & benchmark</span>
+                            <span class="panel-tool">Enquêtes (Sphinx)</span>
+                            <span class="panel-tool">Plan de communication</span>
+                            <span class="panel-tool">Community management</span>
+                            <span class="panel-tool">Ligne éditoriale</span>
+                            <span class="panel-tool">Emailing</span>
+                            <span class="panel-tool">KPIs</span>
+                        </div>
+                    </div>
+                    <div class="panel-content" id="p2">
+                        <div class="panel-num">02</div>
+                        <div class="panel-title">Graphisme & Identité visuelle</div>
+                        <div class="panel-desc">Pour moi, le graphisme sert à rendre un message lisible d'un coup d'œil. Avec l'identité visuelle, je vais plus loin : un logo, des couleurs, des typos et quelques règles, pour qu'une marque se reconnaisse tout de suite, de l'affiche au post Instagram.</div>
+                        <div class="panel-tools">
+                            <span class="panel-tool">Logo & charte graphique</span>
+                            <span class="panel-tool">Supports print</span>
+                            <span class="panel-tool">Visuels réseaux sociaux</span>
+                            <span class="panel-tool">Signalétique</span>
+                        </div>
+                    </div>
+                    <div class="panel-content" id="p3">
+                        <div class="panel-num">03</div>
+                        <div class="panel-title">Audiovisuel & 3D</div>
+                        <div class="panel-desc">La vidéo me plaît parce qu'elle permet de raconter des histoires vraies et de montrer des gens tels qu'ils sont. La 3D, c'est plutôt l'endroit où j'expérimente : j'y construis des petits mondes pour tester des idées.</div>
+                        <div class="panel-tools">
+                            <span class="panel-tool">Scénarisation</span>
+                            <span class="panel-tool">Tournage</span>
+                            <span class="panel-tool">Montage</span>
+                            <span class="panel-tool">Modélisation 3D</span>
+                        </div>
+                    </div>
+                    <div class="panel-content" id="p4">
+                        <div class="panel-num">04</div>
+                        <div class="panel-title">UX/UI Design</div>
+                        <div class="panel-desc">J'aime me mettre à la place de la personne qui va utiliser un site. Si elle trouve ce qu'elle cherche sans avoir à réfléchir, c'est gagné. Pour moi, une belle interface, c'est d'abord une interface qu'on comprend tout de suite.</div>
+                        <div class="panel-tools">
+                            <span class="panel-tool">Wireframes</span>
+                            <span class="panel-tool">Maquettes</span>
+                            <span class="panel-tool">Parcours utilisateur</span>
+                            <span class="panel-tool">Accessibilité</span>
+                        </div>
+                    </div>
+                    <div class="panel-content" id="p5">
+                        <div class="panel-num">05</div>
+                        <div class="panel-title">Développement Web</div>
+                        <div class="panel-desc">Je suis curieux de voir tout ce que le web permet de faire, et j'aime passer d'une maquette à un vrai site. Coder mes idées moi-même m'aide à savoir ce qui est réaliste, et à mieux échanger avec les développeurs.</div>
+                        <div class="panel-tools">
+                            <span class="panel-tool">HTML / CSS</span>
+                            <span class="panel-tool">JavaScript</span>
+                            <span class="panel-tool">PHP</span>
+                            <span class="panel-tool">SQL</span>
+                            <span class="panel-tool">WordPress</span>
+                            <span class="panel-tool">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LISTE DROITE : domaines -->
+                <div class="expertise-list">
+                    <div class="expertise-item active" data-panel="p1">
+                        <span class="expertise-num">01</span>
+                        <span class="expertise-title">Communication & Webmarketing</span>
+                        <span class="expertise-arrow">↗</span>
+                    </div>
+                    <div class="expertise-item" data-panel="p2">
+                        <span class="expertise-num">02</span>
+                        <span class="expertise-title">Graphisme & Identité visuelle</span>
+                        <span class="expertise-arrow">↗</span>
+                    </div>
+                    <div class="expertise-item" data-panel="p3">
+                        <span class="expertise-num">03</span>
+                        <span class="expertise-title">Audiovisuel & 3D</span>
+                        <span class="expertise-arrow">↗</span>
+                    </div>
+                    <div class="expertise-item" data-panel="p4">
+                        <span class="expertise-num">04</span>
+                        <span class="expertise-title">UX/UI Design</span>
+                        <span class="expertise-arrow">↗</span>
+                    </div>
+                    <div class="expertise-item" data-panel="p5">
+                        <span class="expertise-num">05</span>
+                        <span class="expertise-title">Développement Web</span>
+                        <span class="expertise-arrow">↗</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <div class="projets-header section reveal">
+            <h2 class="section-title">Mes projets</h2>
+        </div>
+        <!-- PROJETS -->
+        <section id="projets" class="projects-container">
+            <div class="projects-sticky">
+
+                <div class="marquees-wrapper">
+                    <div class="marquee-rotator">
+                        <!-- Project 1 : LCDV · Stratégie -->
+                        <div class="marquee-bg m-1 active">
+                            <div class="marquee-content">
+                                <span>STRATÉGIE &nbsp;&nbsp;&nbsp; STRATÉGIE &nbsp;&nbsp;&nbsp; STRATÉGIE &nbsp;&nbsp;&nbsp;
+                                    STRATÉGIE &nbsp;&nbsp;&nbsp; STRATÉGIE &nbsp;&nbsp;&nbsp; STRATÉGIE &nbsp;&nbsp;&nbsp; </span>
+                                <span>STRATÉGIE &nbsp;&nbsp;&nbsp; STRATÉGIE &nbsp;&nbsp;&nbsp; STRATÉGIE &nbsp;&nbsp;&nbsp;
+                                    STRATÉGIE &nbsp;&nbsp;&nbsp; STRATÉGIE &nbsp;&nbsp;&nbsp; STRATÉGIE &nbsp;&nbsp;&nbsp; </span>
+                            </div>
+                        </div>
+                        <!-- Project 2 : La Guinguette de Léon -->
+                        <div class="marquee-bg m-2">
+                            <div class="marquee-content">
+                                <span>GUINGUETTE &nbsp;&nbsp;&nbsp; GUINGUETTE &nbsp;&nbsp;&nbsp; GUINGUETTE &nbsp;&nbsp;&nbsp;
+                                    GUINGUETTE &nbsp;&nbsp;&nbsp; GUINGUETTE &nbsp;&nbsp;&nbsp; GUINGUETTE &nbsp;&nbsp;&nbsp; </span>
+                                <span>GUINGUETTE &nbsp;&nbsp;&nbsp; GUINGUETTE &nbsp;&nbsp;&nbsp; GUINGUETTE &nbsp;&nbsp;&nbsp;
+                                    GUINGUETTE &nbsp;&nbsp;&nbsp; GUINGUETTE &nbsp;&nbsp;&nbsp; GUINGUETTE &nbsp;&nbsp;&nbsp; </span>
+                            </div>
+                        </div>
+                        <!-- Project 3 : deMMain -->
+                        <div class="marquee-bg m-3">
+                            <div class="marquee-content">
+                                <span>DEMMAIN &nbsp;&nbsp;&nbsp; DEMMAIN &nbsp;&nbsp;&nbsp; DEMMAIN &nbsp;&nbsp;&nbsp; DEMMAIN
+                                    &nbsp;&nbsp;&nbsp; DEMMAIN &nbsp;&nbsp;&nbsp; DEMMAIN &nbsp;&nbsp;&nbsp; DEMMAIN &nbsp;&nbsp;&nbsp; </span>
+                                <span>DEMMAIN &nbsp;&nbsp;&nbsp; DEMMAIN &nbsp;&nbsp;&nbsp; DEMMAIN &nbsp;&nbsp;&nbsp; DEMMAIN
+                                    &nbsp;&nbsp;&nbsp; DEMMAIN &nbsp;&nbsp;&nbsp; DEMMAIN &nbsp;&nbsp;&nbsp; DEMMAIN &nbsp;&nbsp;&nbsp; </span>
+                            </div>
+                        </div>
+                        <!-- Project 4 : LCDV · Identité -->
+                        <div class="marquee-bg m-4">
+                            <div class="marquee-content">
+                                <span>IDENTITÉ VISUELLE &nbsp;&nbsp;&nbsp; IDENTITÉ VISUELLE &nbsp;&nbsp;&nbsp; IDENTITÉ VISUELLE
+                                    &nbsp;&nbsp;&nbsp; IDENTITÉ VISUELLE &nbsp;&nbsp;&nbsp; </span>
+                                <span>IDENTITÉ VISUELLE &nbsp;&nbsp;&nbsp; IDENTITÉ VISUELLE &nbsp;&nbsp;&nbsp; IDENTITÉ VISUELLE
+                                    &nbsp;&nbsp;&nbsp; IDENTITÉ VISUELLE &nbsp;&nbsp;&nbsp; </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TITRES 3D (Centrés et synchronisés) -->
+                <div class="titles-wrapper">
+
+                </div>
+
+                <div class="cards-wrapper">
+                    <div class="card-rotator">
+                        <!-- Project Card 1 : LCDV · Stratégie -->
+                        <a class="project-card c-1" href="projet-lcdv-strategie.html">
+                            <img src="img/projets/thumbs/lcdv-strategie.jpg" alt="Lannion Cœur de Ville — Diagnostic & stratégie" class="project-card-bg">
+                            <div class="project-card-arrow">
+                                <div class="arrow-wrapper">
+                                    <div class="arrow-main">↗</div>
+                                    <div class="arrow-clone">↗</div>
+                                </div>
+                            </div>
+                            <div class="project-card-bottom">
+                                <h3 class="project-card-title">LCDV · Stratégie</h3>
+                                <div class="project-card-tags">
+                                    <span class="tag">Communication</span><span class="tag">Marketing</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Project Card 2 : La Guinguette de Léon -->
+                        <a class="project-card c-2" href="projet-guinguette.html">
+                            <img src="img/projets/thumbs/guinguette.jpg" alt="La Guinguette de Léon — Identité visuelle" class="project-card-bg">
+                            <div class="project-card-arrow">
+                                <div class="arrow-wrapper">
+                                    <div class="arrow-main">↗</div>
+                                    <div class="arrow-clone">↗</div>
+                                </div>
+                            </div>
+                            <div class="project-card-bottom">
+                                <h3 class="project-card-title">Guinguette de Léon</h3>
+                                <div class="project-card-tags">
+                                    <span class="tag">Identité</span><span class="tag">Print</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Project Card 3 : deMMain -->
+                        <a class="project-card c-3" href="projet-demain.html">
+                            <img src="img/projets/banniere_handibasket.png" alt="deMMain — Handibasket" class="project-card-bg">
+                            <div class="project-card-arrow">
+                                <div class="arrow-wrapper">
+                                    <div class="arrow-main">↗</div>
+                                    <div class="arrow-clone">↗</div>
+                                </div>
+                            </div>
+                            <div class="project-card-bottom">
+                                <h3 class="project-card-title">deMMain</h3>
+                                <div class="project-card-tags">
+                                    <span class="tag">Audiovisuel</span><span class="tag">Documentaire</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Project Card 4 : LCDV · Identité -->
+                        <a class="project-card c-4" href="projet-lcdv-identite.html">
+                            <img src="img/projets/thumbs/lcdv-identite.jpg" alt="Lannion Cœur de Ville — Identité visuelle" class="project-card-bg">
+                            <div class="project-card-arrow">
+                                <div class="arrow-wrapper">
+                                    <div class="arrow-main">↗</div>
+                                    <div class="arrow-clone">↗</div>
+                                </div>
+                            </div>
+                            <div class="project-card-bottom">
+                                <h3 class="project-card-title">LCDV · Identité</h3>
+                                <div class="project-card-tags">
+                                    <span class="tag">Graphisme</span><span class="tag">Identité</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div class="projets-footer section reveal">
+            <a href="projets.html" class="btn-all-projects">
+                <span>Voir tous mes projets</span>
+                <span class="btn-arrow" aria-hidden="true">
+                    <span class="arrow-wrapper">
+                        <span class="arrow-main">↗</span>
+                        <span class="arrow-clone">↗</span>
+                    </span>
+                </span>
+            </a>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- Q&A ACCORDION -->
+        <section id="qna" class="section">
+            <div class="reveal" style="margin-bottom: var(--spacing-lg);">
+                <h2 class="section-title">Q&A</h2>
+            </div>
+            <div class="qna-list">
+                <div class="qna-item reveal">
+                    <button class="qna-question">
+                        <span>Qui es-tu, en quelques mots ?</span>
+                        <span class="qna-icon">↗</span>
+                    </button>
+                    <div class="qna-answer">
+                        <p>Je m'appelle Antonin, j'ai 21 ans et je suis étudiant en 3ᵉ année de BUT MMI à l'IUT de Lannion.</p>
+                        <p>En dehors des études, j'aime particulièrement le sport et surtout le football. Je suis également attiré par tout ce qui touche à la création et au numérique. J'aime explorer le web, découvrir ce qu'il est possible de faire et réfléchir aux différentes façons de transmettre un message.</p>
+                        <p>Ce qui m'intéresse particulièrement, c'est de comprendre une situation, identifier un besoin et trouver des solutions adaptées. J'aime autant réfléchir au pourquoi d'un projet qu'imaginer comment le concrétiser.</p>
+                    </div>
+                </div>
+                <div class="qna-item reveal">
+                    <button class="qna-question">
+                        <span>Pourquoi la communication ?</span>
+                        <span class="qna-icon">↗</span>
+                    </button>
+                    <div class="qna-answer">
+                        <p>J'ai d'abord suivi une voie technique : un bac avec la spécialité Numérique et Sciences Informatiques, puis une première année de licence d'informatique, que j'ai validée. J'aimais comprendre comment fonctionnent les outils, mais il me manquait ce qui m'intéresse le plus : le message, et les personnes à qui il s'adresse.</p>
+                        <p>Le BUT MMI m'a permis de garder cette culture du numérique tout en me tournant vers la communication, que j'ai choisi d'approfondir avec le parcours Stratégie de communication. Mon stage aux Chemins de la Rose et l'accompagnement de Lannion Cœur de Ville ont confirmé ce choix : comprendre un public, savoir quoi lui dire et sous quelle forme, c'est ce qui me motive.</p>
+                    </div>
+                </div>
+                <div class="qna-item reveal">
+                    <button class="qna-question">
+                        <span>Quelle expérience as-tu déjà en communication ?</span>
+                        <span class="qna-icon">↗</span>
+                    </button>
+                    <div class="qna-answer">
+                        <p>J'ai effectué un stage de 11 semaines en tant que chargé de communication aux Chemins de la Rose, à Doué-la-Fontaine. J'y ai réalisé des missions variées : création de contenus pour les réseaux sociaux, conception de supports print et digitaux, couverture d'événements, rédaction d'e-mailings et d'annonces, ainsi que création d'une identité visuelle.</p>
+                        <p>D'octobre 2025 à mars 2026, j'ai également accompagné Lannion Cœur de Ville, l'association des commerçants du centre-ville, dans le cadre d'un projet universitaire. Avec mon équipe, nous avons réalisé des audits et une enquête de terrain, élaboré une stratégie de communication, puis conçu une identité visuelle, un nouveau site web et des vidéos promotionnelles.</p>
+                    </div>
+                </div>
+                <div class="qna-item reveal">
+                    <button class="qna-question">
+                        <span>Un projet dont tu es fier ?</span>
+                        <span class="qna-icon">↗</span>
+                    </button>
+                    <div class="qna-answer">
+                        <p>Notre épisode « Le handibasket, bien plus qu'un sport » de la série « deMMain », réalisé en binôme sur le club d'handibasket de Lannion. À travers ce projet, nous avons voulu mettre en lumière le handisport, mais aussi les valeurs d'inclusion et de partage portées par le club, ouvert à tous, en situation de handicap ou non.</p>
+                        <p>Le documentaire a été partagé sur les réseaux sociaux du club et projeté devant toute notre promotion. Il s'est également classé 5ᵉ au vote du public. Mais ce qui m'a particulièrement marqué reste l'accueil des membres du club, qui nous ont fait de très bons retours et remerciés pour cet « hommage ».</p>
+                    </div>
+                </div>
+                <div class="qna-item reveal">
+                    <button class="qna-question">
+                        <span>Que recherches-tu pour ton stage ?</span>
+                        <span class="qna-icon">↗</span>
+                    </button>
+                    <div class="qna-answer">
+                        <p>Un stage de 15 semaines en communication et marketing digital, du 8 mars au 18 juin 2027.</p>
+                        <p>Après mon stage aux Chemins de la Rose et l'accompagnement de Lannion Cœur de Ville, j'aimerais continuer sur cette lancée : participer à la réflexion en amont autant qu'à la création des contenus, au sein d'une équipe qui me fera progresser. J'y apporterai ma polyvalence, de la rédaction au graphisme, en passant par la vidéo et le web.</p>
+                        <p>Basé à Auray, dans le Morbihan, j'ai le permis B et un véhicule.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="contact-cta reveal">
+                <h2>Un stage à proposer ?</h2>
+                <p>Je suis disponible du 8 mars au 18 juin 2027. Parlons-en.</p>
+                <div class="contact-links">
+                    <a href="mailto:antonin.guillototlechien@gmail.com" class="btn-primary">Me contacter</a>
+                    <a href="doc/CV-Antonin-Guillotot-Lechien.pdf" download="CV_Antonin-Guillotot-Lechien.pdf"
+                        class="btn-outline">Télécharger mon CV</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- WRAPPER GLOBAL FOOTER -->
+    <div class="footer-reveal-wrapper">
+
+        <!-- FOOTER (caché derrière la bannière) -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <a href="index.html" class="logo-text footer-logo"><img src="img/letter_logo_blanc.png" alt="Logo Antonin Guillotot-Lechien"></a>
+                    <p>Étudiant MMI · IUT Lannion<br>Stage en communication · mars → juin 2027</p>
+                </div>
+                <a href="mailto:antonin.guillototlechien@gmail.com" class="footer-cta">
+                    <span>Me contacter</span>
+                    <span class="footer-cta-arrow">↗</span>
+                </a>
+            </div>
+
+            <div class="footer-links-grid">
+                <div class="footer-col">
+                    <span class="eyebrow">Navigation</span>
+                    <a href="#propos">À propos</a>
+                    <a href="#expertise">Expertise</a>
+                    <a href="#projets">Projets</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <span class="eyebrow">Réseaux</span>
+                    <a href="https://www.linkedin.com/in/antonin-guillotot-lechien-6b104733b/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/antoninglc" target="_blank">GitHub</a>
+                </div>
+                <div class="footer-col">
+                    <span class="eyebrow">Contact</span>
+                    <a href="mailto:antonin.guillototlechien@gmail.com">Email</a>
+                    <a href="doc/CV-Antonin-Guillotot-Lechien.pdf" download="CV_Antonin-Guillotot-Lechien.pdf">CV</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Antonin Guillotot-Lechien. Tous droits réservés.</p>
+                <p><a href="mentions-legales.html">Mentions légales</a></p>
+            </div>
+        </footer>
+
+        <!-- BANNIÈRE STICKY (passe devant le footer) -->
+        <div class="footer-banner">
+            <div class="footer-banner-track">
+                <span>Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em></span>
+                <span aria-hidden="true">Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em></span>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

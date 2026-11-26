@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deMMain — Mini-documentaire Handibasket · AGL</title>
+    <meta name="description" content="deMMain : un mini-documentaire sur la section Handibasket de Lannion, réalisé en binôme en BUT MMI.">
+    <meta name="author" content="Antonin Guillotot-Lechien">
+    <!-- Aperçu lors d'un partage (LinkedIn, Messenger, mail...) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Antonin Guillotot-Lechien · Portfolio">
+    <meta property="og:title" content="deMMain — Mini-documentaire Handibasket · AGL">
+    <meta property="og:description" content="deMMain : un mini-documentaire sur la section Handibasket de Lannion, réalisé en binôme en BUT MMI.">
+    <meta property="og:image" content="img/projets/banniere_handibasket.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/meta/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/meta/favicon-512.png">
+    <link rel="apple-touch-icon" href="img/meta/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projets.css">
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/vtf-gulax" rel="stylesheet">
+</head>
+
+<body>
+    <div class="reading-progress-bar"></div>
+    <div class="bg-container"></div>
+
+    <!-- ENTRANCE LOADER -->
+    <div id="loader">
+        <div class="loader-logo-container">
+            <img src="img/letter_logo_blanc.png" alt="Logo AGL" class="loader-logo">
+            <div class="loader-glow"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-tag">Voir</div>
+    </div>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="header">
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <img src="img/letter_logo_blanc.png" alt="Logo Antonin Guillotot-Lechien">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="index.html#expertise">À propos</a></li>
+                <li><a href="index.html#contact" class="btn-primary">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html#propos">À propos</a></li>
+                <li><a href="index.html#expertise">Expertise</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pd-container pd-minimal-layout">
+
+        <!-- HERO -->
+        <div class="pd-minimal-hero reveal">
+            <div class="pd-hero-top-bar">
+                <a href="projets.html" class="pd-back-link">← Tous les projets</a>
+                <div class="pd-hero-badges">
+                    <span class="pd-badge">Audiovisuel · Documentaire</span>
+                    <span class="pd-badge accent">BUT MMI · 2024</span>
+                </div>
+            </div>
+
+            <h1 class="pd-hero-title">
+                deMMain
+                <span>Handibasket</span>
+            </h1>
+
+            <p class="pd-hero-lead">
+                Un mini-documentaire de 3 minutes sur la section Handibasket de Lannion, pour la websérie deMMain.
+            </p>
+
+            <div class="pd-minimal-specs-strip">
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Rôle</span>
+                    <span class="pd-strip-val">Réalisation & montage</span>
+                </div>
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Cadre</span>
+                    <span class="pd-strip-val">R3.11 · BUT MMI · 2024</span>
+                </div>
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Outils</span>
+                    <span class="pd-strip-val">Premiere Pro · Audition</span>
+                </div>
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Équipe</span>
+                    <span class="pd-strip-val">Binôme avec Malwen Devey</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- APERÇU : le film -->
+        <section id="apercu" class="pd-section reveal">
+            <div class="pd-media-showcase">
+                <div class="pd-media-content">
+                    <video controls preload="metadata" poster="img/projets/banniere_handibasket.png">
+                        <source src="video/demain-web.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHIFFRES CLÉS -->
+        <section class="pd-section reveal">
+            <div class="cz-figures">
+                <div class="cz-figure">
+                    <span class="cz-figure-num">3'</span>
+                    <span class="cz-figure-label cz-mono">Durée du film</span>
+                </div>
+                <div class="cz-figure">
+                    <span class="cz-figure-num">30'</span>
+                    <span class="cz-figure-label cz-mono">De rushes condensés</span>
+                </div>
+                <div class="cz-figure">
+                    <span class="cz-figure-num">5e</span>
+                    <span class="cz-figure-label cz-mono">Au vote du public</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- BRIEF -->
+        <section id="contexte" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">01 / LE BRIEF</span>
+            </div>
+            <div class="cz-context">
+                <h2 class="pd-section-title">Le sport, pour tous.</h2>
+                <p>
+                    Pour deMMain, la websérie de la promo, on a suivi ceux qui rendent le basket accessible à tous,
+                    en situation de handicap ou non. Contrainte : un format très court, et aucun jump cut.
+                </p>
+            </div>
+        </section>
+
+        <!-- DÉMARCHE -->
+        <section id="demarche" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">02 / DÉMARCHE</span>
+                <h2 class="pd-section-title">De la note d'intention à l'écran</h2>
+            </div>
+            <div class="cz-steps">
+                <div class="cz-step">
+                    <span class="cz-step-num">01</span>
+                    <h4>Préparer</h4>
+                    <p>Notes d'intention et de traitement, repérages, matériel.</p>
+                </div>
+                <div class="cz-step">
+                    <span class="cz-step-num">02</span>
+                    <h4>Tourner</h4>
+                    <p>Interviews à deux caméras, jeu filmé en bord de terrain.</p>
+                </div>
+                <div class="cz-step">
+                    <span class="cz-step-num">03</span>
+                    <h4>Monter</h4>
+                    <p>30 minutes de rushes en 3 minutes, sans jump cut.</p>
+                </div>
+                <div class="cz-step">
+                    <span class="cz-step-num">04</span>
+                    <h4>Finaliser</h4>
+                    <p>Étalonnage, mixage sous Audition, habillage deMMain.</p>
+                </div>
+            </div>
+            <div class="cz-stack">
+                <span class="pd-skill-tag">Note d'intention</span>
+                <span class="pd-skill-tag">Cadrage</span>
+                <span class="pd-skill-tag">Prise de son</span>
+                <span class="pd-skill-tag">Interview</span>
+                <span class="pd-skill-tag">Premiere Pro</span>
+                <span class="pd-skill-tag">Audition</span>
+                <span class="pd-skill-tag">Étalonnage</span>
+            </div>
+        </section>
+
+        <!-- BILAN -->
+        <section id="bilan" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">03 / CE QUE J'EN RETIENS</span>
+            </div>
+            <div class="cz-takeaways">
+                <div class="cz-takeaway">
+                    <strong>Diffusé par le club</strong>
+                    <p>Le club d'Handibasket a partagé la vidéo sur ses réseaux.</p>
+                </div>
+                <div class="cz-takeaway">
+                    <strong>Projeté en grand</strong>
+                    <p>Devant toute la promotion et les enseignants.</p>
+                </div>
+                <div class="cz-takeaway">
+                    <strong>3 minutes, c'est court</strong>
+                    <p>Couper beaucoup pour ne garder que la sincérité des témoignages.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NAVIGATION -->
+        <div class="pd-next-prev-grid reveal">
+            <a href="projet-lcdv-site.html" class="pd-nav-card prev">
+                <span class="pd-nav-card-sub">← Projet précédent</span>
+                <h3 class="pd-nav-card-title">LCDV · Site web</h3>
+                <span class="pd-nav-card-arrow">←</span>
+            </a>
+            <a href="projet-3d-diorama.html" class="pd-nav-card next">
+                <span class="pd-nav-card-sub">Projet suivant →</span>
+                <h3 class="pd-nav-card-title">Diorama 3D</h3>
+                <span class="pd-nav-card-arrow">→</span>
+            </a>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diorama 3D — Ferme flottante low poly · AGL</title>
+    <meta name="description" content="Une ferme flottante en low poly, modélisée et rendue sous Blender en BUT MMI.">
+    <meta name="author" content="Antonin Guillotot-Lechien">
+    <!-- Aperçu lors d'un partage (LinkedIn, Messenger, mail...) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Antonin Guillotot-Lechien · Portfolio">
+    <meta property="og:title" content="Diorama 3D — Ferme flottante low poly · AGL">
+    <meta property="og:description" content="Une ferme flottante en low poly, modélisée et rendue sous Blender en BUT MMI.">
+    <meta property="og:image" content="img/projets/thumbs/diorama.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/meta/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/meta/favicon-512.png">
+    <link rel="apple-touch-icon" href="img/meta/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projets.css">
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/vtf-gulax" rel="stylesheet">
+</head>
+
+<body>
+    <div class="reading-progress-bar"></div>
+    <div class="bg-container"></div>
+
+    <!-- ENTRANCE LOADER -->
+    <div id="loader">
+        <div class="loader-logo-container">
+            <img src="img/letter_logo_blanc.png" alt="Logo AGL" class="loader-logo">
+            <div class="loader-glow"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-tag">Voir</div>
+    </div>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="header">
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <img src="img/letter_logo_blanc.png" alt="Logo Antonin Guillotot-Lechien">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="index.html#expertise">À propos</a></li>
+                <li><a href="index.html#contact" class="btn-primary">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html#propos">À propos</a></li>
+                <li><a href="index.html#expertise">Expertise</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pd-container pd-minimal-layout">
+
+        <!-- HERO -->
+        <div class="pd-minimal-hero reveal">
+            <div class="pd-hero-top-bar">
+                <a href="projets.html" class="pd-back-link">← Tous les projets</a>
+                <div class="pd-hero-badges">
+                    <span class="pd-badge">3D · Infographie</span>
+                    <span class="pd-badge accent">BUT MMI · 2024</span>
+                </div>
+            </div>
+
+            <h1 class="pd-hero-title">
+                Diorama 3D
+                <span>Ferme flottante</span>
+            </h1>
+
+            <p class="pd-hero-lead">
+                Une scène low poly : une ferme répartie sur des îlots suspendus, reliés par des passerelles.
+            </p>
+
+            <div class="pd-minimal-specs-strip">
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Rôle</span>
+                    <span class="pd-strip-val">Modélisation & rendu</span>
+                </div>
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Cadre</span>
+                    <span class="pd-strip-val">R3.19 · BUT MMI · 2024</span>
+                </div>
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Outil</span>
+                    <span class="pd-strip-val">Blender</span>
+                </div>
+                <div class="pd-strip-item">
+                    <span class="pd-strip-label">Équipe</span>
+                    <span class="pd-strip-val">Solo</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- APERÇU : le rendu -->
+        <section id="apercu" class="pd-section reveal">
+            <div class="pd-media-showcase">
+                <div class="pd-media-content">
+                    <video controls autoplay loop muted playsinline poster="img/projets/banniere_diorama.jpg">
+                        <source src="video/diorama-web.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- BRIEF -->
+        <section id="contexte" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">01 / LE BRIEF</span>
+            </div>
+            <div class="cz-context">
+                <h2 class="pd-section-title">Un monde suspendu.</h2>
+                <p>
+                    La consigne : un diorama low poly qui raconte une histoire. Le défi : garder chaque élément lisible
+                    dans une composition dense et équilibrée.
+                </p>
+            </div>
+        </section>
+
+        <!-- DÉMARCHE -->
+        <section id="demarche" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">02 / DÉMARCHE</span>
+                <h2 class="pd-section-title">Du concept au rendu</h2>
+            </div>
+            <div class="cz-steps">
+                <div class="cz-step">
+                    <span class="cz-step-num">01</span>
+                    <h4>Imaginer</h4>
+                    <p>Concept, composition des îlots et palette.</p>
+                </div>
+                <div class="cz-step">
+                    <span class="cz-step-num">02</span>
+                    <h4>Modéliser</h4>
+                    <p>Îlots, animaux, outils, avec les modifiers Array et Displace.</p>
+                </div>
+                <div class="cz-step">
+                    <span class="cz-step-num">03</span>
+                    <h4>Éclairer</h4>
+                    <p>Proportions, contrastes et lumière naturelle.</p>
+                </div>
+                <div class="cz-step">
+                    <span class="cz-step-num">04</span>
+                    <h4>Rendre</h4>
+                    <p>Caméra orbitale et rendu vidéo.</p>
+                </div>
+            </div>
+            <div class="cz-stack">
+                <span class="pd-skill-tag">Blender</span>
+                <span class="pd-skill-tag">Modélisation low poly</span>
+                <span class="pd-skill-tag">Modifiers</span>
+                <span class="pd-skill-tag">Composition</span>
+                <span class="pd-skill-tag">Éclairage</span>
+                <span class="pd-skill-tag">Caméra 3D</span>
+            </div>
+        </section>
+
+        <!-- BILAN -->
+        <section id="bilan" class="pd-section reveal">
+            <div class="pd-section-header">
+                <span class="pd-section-tag">03 / CE QUE J'EN RETIENS</span>
+            </div>
+            <div class="cz-takeaways">
+                <div class="cz-takeaway">
+                    <strong>Lisible avant tout</strong>
+                    <p>Une scène dense ne marche que si chaque objet se reconnaît.</p>
+                </div>
+                <div class="cz-takeaway">
+                    <strong>Les modifiers font gagner du temps</strong>
+                    <p>Répéter et déformer sans tout modéliser à la main.</p>
+                </div>
+                <div class="cz-takeaway">
+                    <strong>La lumière raconte</strong>
+                    <p>Des couleurs contrastées pour faire vivre les ombres.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NAVIGATION -->
+        <div class="pd-next-prev-grid reveal">
+            <a href="projet-demain.html" class="pd-nav-card prev">
+                <span class="pd-nav-card-sub">← Projet précédent</span>
+                <h3 class="pd-nav-card-title">deMMain</h3>
+                <span class="pd-nav-card-arrow">←</span>
+            </a>
+            <a href="projet-confiz.html" class="pd-nav-card next">
+                <span class="pd-nav-card-sub">Projet suivant →</span>
+                <h3 class="pd-nav-card-title">Confiz</h3>
+                <span class="pd-nav-card-arrow">→</span>
+            </a>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projets.css">
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/vtf-gulax" rel="stylesheet">
+
+    <title>Projets | Antonin Guillotot-Lechien</title>
+    <meta name="description" content="Tous les projets d'Antonin Guillotot-Lechien : communication, identité visuelle, UX/UI, web et audiovisuel.">
+    <meta name="author" content="Antonin Guillotot-Lechien">
+    <!-- Aperçu lors d'un partage (LinkedIn, Messenger, mail...) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Antonin Guillotot-Lechien · Portfolio">
+    <meta property="og:title" content="Projets | Antonin Guillotot-Lechien">
+    <meta property="og:description" content="Tous les projets d'Antonin Guillotot-Lechien : communication, identité visuelle, UX/UI, web et audiovisuel.">
+    <meta property="og:image" content="img/meta/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/meta/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/meta/favicon-512.png">
+    <link rel="apple-touch-icon" href="img/meta/apple-touch-icon.png">
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class="bg-aurora">
+            <div class="aurora-1"></div>
+            <div class="aurora-2"></div>
+            <div class="aurora-3"></div>
+        </div>
+        <div class="bg-grid"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-tag">Voir</div>
+    </div>
+
+    <!-- Glow effect following mouse -->
+    <div id="glow"></div>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="header">
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <img src="img/letter_logo_blanc.png" alt="Logo Antonin Guillotot-Lechien">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="index.html#expertise">À propos</a></li>
+                <li><a href="index.html#contact" class="btn-primary">Contact</a></li>
+            </ul>
+
+            <!-- HAMBURGER BUTTON -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- MOBILE MENU OVERLAY -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html#propos">À propos</a></li>
+                <li><a href="index.html#expertise">Expertise</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="projects-page-main section reveal">
+        <div class="projects-hero">
+            <h1 class="projects-page-title">Tous mes projets<span class="projects-count">/ 7</span></h1>
+            <div class="projects-filters" role="group" aria-label="Filtrer les projets par domaine">
+                <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">Tous <span class="filter-count"></span></button>
+                <button type="button" class="filter-btn" data-filter="communication" aria-pressed="false">Communication <span class="filter-count"></span></button>
+                <button type="button" class="filter-btn" data-filter="uxui" aria-pressed="false">UX/UI <span class="filter-count"></span></button>
+                <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Développement web <span class="filter-count"></span></button>
+                <button type="button" class="filter-btn" data-filter="graphisme" aria-pressed="false">Graphisme <span class="filter-count"></span></button>
+                <button type="button" class="filter-btn" data-filter="audiovisuel" aria-pressed="false">Audiovisuel <span class="filter-count"></span></button>
+                <button type="button" class="filter-btn" data-filter="3d" aria-pressed="false">3D <span class="filter-count"></span></button>
+            </div>
+        </div>
+
+        <div class="projects-grid">
+            <!-- La Guinguette de Léon (stage) -->
+            <div onclick="window.location.href='projet-guinguette.html'" class="project-grid-card" data-domains="graphisme communication"
+                style="cursor: pointer;">
+                <div class="project-grid-visual">
+                    <img src="img/projets/thumbs/guinguette.jpg" alt="La Guinguette de Léon — Identité visuelle"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="project-grid-info">
+                    <div class="project-grid-meta">
+                        <span>Stage · 2026</span>
+                        <span>Identité visuelle / Print</span>
+                    </div>
+                    <h3 class="project-grid-title">La Guinguette de Léon <span class="project-grid-arrow">↗</span></h3>
+                    <p class="project-grid-desc">Logo, affiche, flyers, carte et signalétique de la guinguette estivale
+                        de la roseraie Les Chemins de la Rose.</p>
+                </div>
+            </div>
+            <!-- Lannion Cœur de Ville 1/3 : stratégie -->
+            <div onclick="window.location.href='projet-lcdv-strategie.html'" class="project-grid-card" data-domains="communication"
+                style="cursor: pointer;">
+                <div class="project-grid-visual">
+                    <img src="img/projets/thumbs/lcdv-strategie.jpg" alt="Lannion Cœur de Ville — Diagnostic & stratégie"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="project-grid-info">
+                    <div class="project-grid-meta">
+                        <span>2025–2026</span>
+                        <span>Communication / Marketing</span>
+                    </div>
+                    <h3 class="project-grid-title">LCDV · Stratégie <span class="project-grid-arrow">↗</span></h3>
+                    <p class="project-grid-desc">Enquête, audits et recommandations pour l'association des
+                        commerçants du centre-ville de Lannion.</p>
+                </div>
+            </div>
+
+            <!-- Lannion Cœur de Ville 2/3 : identité -->
+            <div onclick="window.location.href='projet-lcdv-identite.html'" class="project-grid-card" data-domains="graphisme"
+                style="cursor: pointer;">
+                <div class="project-grid-visual">
+                    <img src="img/projets/thumbs/lcdv-identite.jpg" alt="Lannion Cœur de Ville — Identité visuelle"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="project-grid-info">
+                    <div class="project-grid-meta">
+                        <span>2025–2026</span>
+                        <span>Graphisme / Identité</span>
+                    </div>
+                    <h3 class="project-grid-title">LCDV · Identité <span class="project-grid-arrow">↗</span></h3>
+                    <p class="project-grid-desc">Trois pistes de logo, une retenue, et la charte graphique 2026 de
+                        l'association.</p>
+                </div>
+            </div>
+
+            <!-- Lannion Cœur de Ville 3/3 : site web -->
+            <div onclick="window.location.href='projet-lcdv-site.html'" class="project-grid-card" data-domains="uxui web"
+                style="cursor: pointer;">
+                <div class="project-grid-visual">
+                    <img src="img/projets/thumbs/lcdv-site.jpg" alt="Lannion Cœur de Ville — Site web"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="project-grid-info">
+                    <div class="project-grid-meta">
+                        <span>2025–2026</span>
+                        <span>UX/UI / Dév Web</span>
+                    </div>
+                    <h3 class="project-grid-title">LCDV · Site web <span class="project-grid-arrow">↗</span></h3>
+                    <p class="project-grid-desc">Wireframes, mockups et prototype codé du nouveau site, avec
+                        espaces commerçant et admin.</p>
+                </div>
+            </div>
+
+            <!-- Project 5: deMMain -->
+            <div onclick="window.location.href='projet-demain.html'" class="project-grid-card" data-domains="audiovisuel" style="cursor: pointer;">
+                <div class="project-grid-visual">
+                    <img src="img/projets/banniere_handibasket.png" alt="deMMain">
+                </div>
+                <div class="project-grid-info">
+                    <div class="project-grid-meta">
+                        <span>2024</span>
+                        <span>Audiovisuel</span>
+                    </div>
+                    <h3 class="project-grid-title">deMMain <span class="project-grid-arrow">↗</span></h3>
+                    <p class="project-grid-desc">Mini-documentaire de 3 minutes sur le Handibasket, une initiative
+                        locale à Lannion.</p>
+                </div>
+            </div>
+
+            <!-- Project 6: Diorama 3D -->
+            <div onclick="window.location.href='projet-3d-diorama.html'" class="project-grid-card" data-domains="3d"
+                style="cursor: pointer;">
+                <div class="project-grid-visual">
+                    <img src="img/projets/thumbs/diorama.jpg" alt="Diorama 3D low poly : une ferme répartie sur plusieurs îlots flottants"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="project-grid-info">
+                    <div class="project-grid-meta">
+                        <span>2024</span>
+                        <span>3D / Infographie</span>
+                    </div>
+                    <h3 class="project-grid-title">Diorama 3D <span class="project-grid-arrow">↗</span></h3>
+                    <p class="project-grid-desc">Scène low poly représentant une ferme flottante composée de plusieurs
+                        îlots suspendus.</p>
+                </div>
+            </div>
+
+            <!-- Project 7: Confiz -->
+            <div onclick="window.location.href='projet-confiz.html'" class="project-grid-card" data-domains="uxui web"
+                style="cursor: pointer;">
+                <div class="project-grid-visual">
+                    <img src="img/projets/thumbs/confiz.jpg" alt="Confiz"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="project-grid-info">
+                    <div class="project-grid-meta">
+                        <span>SAE 2.03</span>
+                        <span>UX/UI / Dév Web</span>
+                    </div>
+                    <h3 class="project-grid-title">Confiz <span class="project-grid-arrow">↗</span></h3>
+                    <p class="project-grid-desc">Prototype de site web en PHP pour gérer les boutiques et les stocks
+                        d'un réseau de confiseries.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER REVEAL WRAPPER -->
+    <div class="footer-reveal-wrapper">
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <a href="index.html" class="logo-text footer-logo"><img src="img/letter_logo_blanc.png" alt="Logo Antonin Guillotot-Lechien"></a>
+                    <p>Étudiant MMI · IUT Lannion<br>Stage en communication · mars → juin 2027</p>
+                </div>
+                <a href="mailto:antonin.guillototlechien@gmail.com" class="footer-cta">
+                    <span>Me contacter</span>
+                    <span class="footer-cta-arrow">↗</span>
+                </a>
+            </div>
+
+            <div class="footer-links-grid">
+                <div class="footer-col">
+                    <span class="eyebrow">Navigation</span>
+                    <a href="index.html#propos">À propos</a>
+                    <a href="index.html#expertise">Expertise</a>
+                    <a href="projets.html">Projets</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <span class="eyebrow">Réseaux</span>
+                    <a href="https://www.linkedin.com/in/antonin-guillotot-lechien-6b104733b/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/antoninglc" target="_blank">GitHub</a>
+                </div>
+                <div class="footer-col">
+                    <span class="eyebrow">Contact</span>
+                    <a href="mailto:antonin.guillototlechien@gmail.com">Email</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Antonin Guillotot-Lechien. Tous droits réservés.</p>
+                <p><a href="mentions-legales.html">Mentions légales</a></p>
+            </div>
+        </footer>
+
+        <div class="footer-banner">
+            <div class="footer-banner-track">
+                <span>Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em></span>
+                <span aria-hidden="true">Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em> Disponible pour un stage <em>—</em></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
